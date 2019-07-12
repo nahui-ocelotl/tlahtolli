@@ -19,17 +19,6 @@
 				 });
 			 });
 		</script>
-		
-	<style>
-		
-	#currentdate{
-		display:none;
-		}
-	#date{
-		text-align:center;
-		}
-	</style>
-		
 
 	 </head>
 	 <body>
@@ -37,15 +26,6 @@
 		<div class="CanvasDiv">
                 <div id="RendererMain"></div>
 		</div>
-		 <p id="currentdate"></p>
-		 <p><input type="date" id="date"></p>
 		 
-		<script>
-			{
-  			var d = new Date();
- 			var n = d.toLocaleDateString();
-  			document.getElementById("currentdate").innerHTML = n;			
-			}
-			</script>
 	 </body>
 </html>
