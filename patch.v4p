@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
   <PATCH>
-  <BOUNDS type="Window" width="9750" height="18615">
+  <BOUNDS type="Window" width="9255" height="18615">
   </BOUNDS>
   <NODE id="66" nodename="GetElement (HTML)" systemname="GetElement (HTML)" componentmode="Hidden">
   <BOUNDS type="Node" left="2340" top="1635" width="100" height="100">
@@ -138,32 +138,30 @@
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <NODE id="86" nodename="TextInput (HTML)" systemname="TextInput (HTML)" componentmode="Hidden">
-  <BOUNDS type="Node" left="1425" top="6150" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="Style In" visible="1">
-  </PIN>
-  <PIN pinname="Parent" visible="1">
-  </PIN>
-  <PIN pinname="Text" visible="1" values="|tlapouhqui|">
-  </PIN>
-  <PIN pinname="name" visible="1">
-  </PIN>
-  <PIN pinname="value" visible="1">
-  </PIN>
-  <PIN pinname="Enabled" visible="1">
-  </PIN>
-  <PIN pinname="Attribute Names" visible="0" values="||">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
   <NODE id="87" nodename="Select (String)" systemname="Select (String)" componentmode="Hidden">
   <BOUNDS type="Node" left="2385" top="5490" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Input" visible="1">
   </PIN>
   <PIN pinname="Select" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="88" nodename="Element (HTML)" systemname="Element (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="1470" top="6210" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Style In" visible="1">
+  </PIN>
+  <PIN pinname="Tag Name" visible="1">
+  </PIN>
+  <PIN pinname="Parent" visible="1">
+  </PIN>
+  <PIN pinname="Text" visible="1">
+  </PIN>
+  <PIN pinname="Enabled" visible="1">
+  </PIN>
+  <PIN pinname="Attribute Names" visible="0" values="||">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
@@ -188,8 +186,8 @@
   </LINK>
   <LINK srcnodeid="84" srcpinname="Output" dstnodeid="87" dstpinname="Select">
   </LINK>
-  <LINK srcnodeid="87" srcpinname="Output" dstnodeid="86" dstpinname="value">
-  </LINK>
   <LINK srcnodeid="83" srcpinname="Output" dstnodeid="84" dstpinname="Input 1">
+  </LINK>
+  <LINK srcnodeid="87" srcpinname="Output" dstnodeid="88" dstpinname="Text">
   </LINK>
   </PATCH>
