@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
   <PATCH>
-  <BOUNDS type="Window" width="9060" height="18615">
+  <BOUNDS type="Window" width="8565" height="18615">
   </BOUNDS>
   <NODE id="66" nodename="GetElement (HTML)" systemname="GetElement (HTML)" componentmode="Hidden">
   <BOUNDS type="Node" left="2340" top="1635" width="100" height="100">
@@ -251,5 +251,7 @@
   <LINK srcnodeid="91" srcpinname="Style Out" dstnodeid="90" dstpinname="Style In">
   </LINK>
   <LINK srcnodeid="95" srcpinname="Style Out" dstnodeid="91" dstpinname="Style In">
+  </LINK>
+  <LINK srcnodeid="90" srcpinname="Style Out" dstnodeid="88" dstpinname="Style In">
   </LINK>
   </PATCH>
