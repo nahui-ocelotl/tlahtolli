@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
   <PATCH>
-  <BOUNDS type="Window" width="8070" height="18615">
+  <BOUNDS type="Window" width="8700" height="18615">
   </BOUNDS>
   <NODE id="66" nodename="GetElement (HTML)" systemname="GetElement (HTML)" componentmode="Hidden">
   <BOUNDS type="Node" left="2340" top="1635" width="100" height="100">
@@ -109,7 +109,7 @@
   </PIN>
   <PIN pinname="name" visible="1">
   </PIN>
-  <PIN pinname="value" visible="1">
+  <PIN pinname="value" visible="1" values="|palabra|">
   </PIN>
   <PIN pinname="Enabled" visible="1">
   </PIN>
@@ -185,7 +185,7 @@
   </PIN>
   </NODE>
   <NODE id="90" nodename="Style (HTML)" systemname="Style (HTML)" componentmode="Hidden">
-  <BOUNDS type="Node" left="600" top="7650" width="100" height="100">
+  <BOUNDS type="Node" left="285" top="7650" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Style In" visible="1">
   </PIN>
@@ -268,6 +268,92 @@
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
+  <NODE id="100" nodename="TextInput (HTML)" systemname="TextInput (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="4815" top="6165" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Style In" visible="1">
+  </PIN>
+  <PIN pinname="Parent" visible="1">
+  </PIN>
+  <PIN pinname="Text" visible="1">
+  </PIN>
+  <PIN pinname="name" visible="1" values="||">
+  </PIN>
+  <PIN pinname="value" visible="1" values="|tlahtolli|">
+  </PIN>
+  <PIN pinname="Enabled" visible="1">
+  </PIN>
+  <PIN pinname="Attribute Names" visible="0" values="||">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="101" nodename="Element (HTML)" systemname="Element (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="4530" top="8685" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Style In" visible="1">
+  </PIN>
+  <PIN pinname="Tag Name" visible="1">
+  </PIN>
+  <PIN pinname="Parent" visible="1">
+  </PIN>
+  <PIN pinname="Text" visible="1">
+  </PIN>
+  <PIN pinname="Enabled" visible="1">
+  </PIN>
+  <PIN pinname="Attribute Names" visible="0" values="||">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="102" nodename="Element (HTML)" systemname="Element (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="4770" top="5535" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Style In" visible="1">
+  </PIN>
+  <PIN pinname="Tag Name" visible="1" values="|div|">
+  </PIN>
+  <PIN pinname="Parent" visible="1">
+  </PIN>
+  <PIN pinname="Text" visible="1">
+  </PIN>
+  <PIN pinname="Enabled" visible="1">
+  </PIN>
+  <PIN pinname="Attribute Names" visible="0" values="||">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="103" nodename="EQ (String)" systemname="EQ (String)" componentmode="Hidden">
+  <BOUNDS type="Node" left="6105" top="7530" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Input 1" visible="1">
+  </PIN>
+  <PIN pinname="Input 2" visible="1">
+  </PIN>
+  <PIN pinname="Case Sensitive" visible="1" values="|0|">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="104" nodename="Select (String)" systemname="Select (String)" componentmode="Hidden">
+  <BOUNDS type="Node" left="5220" top="8070" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Input" visible="1">
+  </PIN>
+  <PIN pinname="Select" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="105" nodename="GetValue (HTML)" systemname="GetValue (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="4170" top="6915" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Element" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
   <LINK srcnodeid="66" srcpinname="Layers Out" dstnodeid="68" dstpinname="Element">
   </LINK>
   <LINK srcnodeid="67" srcpinname="Output String" dstnodeid="66" dstpinname="Selector">
@@ -311,5 +397,29 @@
   <LINK srcnodeid="91" srcpinname="Style Out" dstnodeid="89" dstpinname="Style In">
   </LINK>
   <LINK srcnodeid="90" srcpinname="Style Out" dstnodeid="88" dstpinname="Style In">
+  </LINK>
+  <LINK srcnodeid="90" srcpinname="Style Out" dstnodeid="101" dstpinname="Style In">
+  </LINK>
+  <LINK srcnodeid="97" srcpinname="Style Out" dstnodeid="100" dstpinname="Style In">
+  </LINK>
+  <LINK srcnodeid="91" srcpinname="Style Out" dstnodeid="102" dstpinname="Style In">
+  </LINK>
+  <LINK srcnodeid="102" srcpinname="Layers Out" dstnodeid="100" dstpinname="Parent">
+  </LINK>
+  <LINK srcnodeid="103" srcpinname="Output" dstnodeid="104" dstpinname="Select">
+  </LINK>
+  <LINK srcnodeid="100" srcpinname="Layers Out" dstnodeid="105" dstpinname="Element">
+  </LINK>
+  <LINK srcnodeid="105" srcpinname="Output" dstnodeid="103" dstpinname="Input 1">
+  </LINK>
+  <LINK srcnodeid="69" srcpinname="Output" dstnodeid="103" dstpinname="Input 2">
+  </LINK>
+  <LINK srcnodeid="104" srcpinname="Output" dstnodeid="101" dstpinname="Text">
+  </LINK>
+  <LINK srcnodeid="73" srcpinname="Output" dstnodeid="104" dstpinname="Input">
+  </LINK>
+  <LINK srcnodeid="89" srcpinname="Layers Out" dstnodeid="88" dstpinname="Parent">
+  </LINK>
+  <LINK srcnodeid="102" srcpinname="Layers Out" dstnodeid="101" dstpinname="Parent">
   </LINK>
   </PATCH>
