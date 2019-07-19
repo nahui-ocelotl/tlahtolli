@@ -1,2 +1,2 @@
 # tonalpohualli
-Nahuatl Language dictionary
+Mexican language dictionary
