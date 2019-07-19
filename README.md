@@ -1,2 +1,2 @@
 # tonalpohualli
-Mexican language dictionary
+vvvv.js mexican language dictionary
